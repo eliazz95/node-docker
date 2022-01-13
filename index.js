@@ -54,7 +54,7 @@ app.use(session({
 
 
 app.get('/', (req, res) => {
-    res.send('<h2> Hello Dude! </h2>')
+    res.send('<h2> Hello World! </h2>')
     console.log('Yes, it ran')
 })
 
