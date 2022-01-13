@@ -5,11 +5,11 @@ services:
       - '80:80'
   node-app:
     deploy:
-      replicas: 8
+      replicas: 2
       restart_policy:
         condition: any
       update_config:
-        parallelism: 2
+        parallelism: 1
         failure_action: rollback
         delay: 15s
     build:
